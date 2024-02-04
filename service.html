@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>PESTCO - Pest Control</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+         <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+        <!-- Set the favicon -->
+        <link rel="icon" type="image/x-icon" href="img/beeInLogo.ico">
+
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar-top bg-primary">
+            <div class="container">
+                <div class="d-flex justify-content-between topbar py-2">
+                    <div class="d-flex align-items-center flex-shrink-0 topbar-info">
+                        <a href="https://maps.app.goo.gl/PCBiFMCVydAWqL4d7" class="me-4 text-secondary"><i class="fas fa-map-marker-alt me-2 text-dark"></i>53/1366D, S.A Road, Vytila, 682019 Ernakulam</a>
+                        <a href="#" class="me-4 text-secondary"><i class="fas fa-phone-alt me-2 text-dark"></i>+91 9061513512, 7907422966</a>
+                        <a href="#" class="text-secondary"><i class="fas fa-envelope me-2 text-dark"></i>info@pestcoindia.com</a>
+                    </div>
+                    <div hidden class="text-end pe-4 me-4 border-end border-dark search-btn">
+                        <div class="search-form">
+                            <form method="post" action="index.html">
+                                <div class="form-group">
+                                    <div class="d-flex">
+                                        <input type="search" class="form-control border-0 rounded-pill" name="search-input" value="" placeholder="Search Here" required=""/>
+                                        <button type="submit" value="Search Now!" class="btn"><i class="fa fa-search text-dark"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center topbar-icon">
+                        <a href="#" class="me-4"><i class="fab fa-facebook-f text-dark"></i></a>
+                        <a href="#" class="me-4"><i class="fab fa-twitter text-dark"></i></a>
+                        <a href="#" class="me-4"><i class="fab fa-instagram text-dark"></i></a>
+                        <a href="#" class=""><i class="fab fa-linkedin-in text-dark"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-dark">
+            <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
+                    <!-- For larger screens, use the logo -->
+                    <a href="index.html" class="navbar-brand d-none d-lg-block">
+                        <img src="img/Pestco logo1.png" alt="Your Company Logo" class="logo-img">
+                        <!-- Replace the <i> tag with an <img> tag for the .ico file -->
+                        <img src="img/beeInLogo.ico" alt="Your Icon" class="icon-img img-fluid">
+                    </a>
+                    <!-- For smaller screens, display text -->
+                    <a href="index.html" class="navbar-brand d-lg-none">
+                        <h1 class="mb-0 diplay-5">PESTCO<span class="text-white"></span></h1>
+                        <!--<span class="brandnameandtag">THE BEST PEST SOLUTION</span>-->
+                    </a>
+                    <!-- Rest of your navigation bar -->
+                    <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-dark"></span>
+                    </button>
+                    <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link">Services</a>
+                            <!--<a href="project.html" class="nav-item nav-link">Projects</a>-->
+                            <div hidden class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu m-0 bg-primary">
+                                    <a href="price.html" class="dropdown-item">Pricing Plan</a>
+                                    <a href="blog.html" class="dropdown-item">Blog Post</a>
+                                    <a href="team.html" class="dropdown-item">Team Members</a>
+                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                    <a href="404.html" class="dropdown-item active">404 Page</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        
+        <!-- Page Header Start -->
+        <div class="container-fluid page-header py-2 py-md-4 m-0">
+            <div class="container text-center py-4">
+                <h1 class="display-2 text-white mb-2 animated slideInDown">Services</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center mb-0 animated slideInDown">
+                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                        <!--<li class="breadcrumb-item"><a href="#">Pages</a></li>-->
+                        <li class="breadcrumb-item text-white" aria-current="page">Services</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+
+        <!-- Services Start -->
+        <div class="container-fluid services-container py-2 py-md-4 m-0">
+            <div class="container text-center py-2 py-md-4">
+                <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
+                    <!--h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Our Services</h5-->
+                    <img src="img/beeInLogo.ico" alt="">
+                    <h1 class="targetElement display-5">Pest Control Services</h1>
+                </div>
+                <div class="row g-5 specific-class services">
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="bg-light rounded p-5 services-item">
+                            <div class="d-flex" style="align-items: center; justify-content: center;">
+                                <div class="mb-4 rounded-circle services-inner-icon">
+                                    <i class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4.5em" height="4.5em" viewBox="0 0 48 48">
+                                            <g fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                    d="M24.767 17.736c.376.17.794.264 1.233.264h4v-6h2v-2h-3.341a6 6 0 1 0-3.892 7.736M23 8c-1.48 0-2.773.804-3.465 2h6.93A3.998 3.998 0 0 0 23 8m3 8a1 1 0 0 1-1-1v-3h3v4z"
+                                                    clip-rule="evenodd" />
+                                                <path
+                                                    d="M10 20a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h.054c.257 2.35 1.42 4.28 3.156 5.65c1.957 1.543 4.602 2.35 7.45 2.35c4.552 0 8.76-1.833 10.172-6.007a2.001 2.001 0 0 0 1.845-3.084l3.788-2.062l-.956-1.756l-4.856 2.643l-5.004-1.877h-.002A1 1 0 0 1 25 28.92V26a2 2 0 1 0-4 0v5a2 2 0 0 0 1.298 1.873l6.636 2.488C27.897 38.388 24.771 40 20.66 40c-2.487 0-4.671-.707-6.21-1.921c-1.313-1.035-2.184-2.456-2.398-4.218A4.002 4.002 0 0 0 15 30v-6a4 4 0 0 0-4-4h1.5a1 1 0 1 0 0-2h-4a1 1 0 1 0 0 2zm31.848 5.53l-1.696-1.06L36.696 30H42v-2h-1.696z" />
+                                                <path
+                                                    d="M18 20a2 2 0 0 0-2 2v9.5a5.5 5.5 0 0 0 8.758 4.431l-3.162-1.186A4 4 0 0 1 19 31v-5a4 4 0 0 1 8 0v-3a3 3 0 0 0-3-3z" />
+                                            </g>
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                            <h4>General Service</h4>
+                            <p class="fs-5">Effective general pest control for a pest-free, comfortable space</p>
+                            <button onclick="generalService()" type="button"
+                                class="learn-more btn btn-primary border-0 rounded-pill px-4 py-3">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="bg-light rounded p-5 services-item">
+                            <div class="d-flex" style="align-items: center; justify-content: center;">
+                                <div class="mb-4 rounded-circle services-inner-icon">
+                                    <i class="fa fa-spider fa-3x text-primary"></i>
+                                </div>
+                            </div>
+                            <h4>Spiders</h4>
+                            <p class="fs-5">Precision removal of spiders, ensuring a pest-free environment.</p>
+                            <button
+                                onclick="spiderService()"
+                                type="button" class="learn-more btn btn-primary border-0 rounded-pill px-4 py-3">Learn More</button>
+                            </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".7s">
+                        <div class="bg-light rounded p-5 services-item">
+                            <div class="d-flex" style="align-items: center; justify-content: center;">
+                                <div class="mb-4 rounded-circle services-inner-icon">
+                                    <i class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="3.5em" viewBox="0 0 640 512">
+                                            <path fill="currentColor"
+                                                d="M463.7 505.9c9.8-8.9 10.7-24.3 2.1-34.3l-42.1-49v-54.7c0-5.5-1.8-10.8-5.1-15.1L352 266.3v-.3l133.4 121.8c57 59.8 154.6 17.4 154.6-67.2c0-47.9-34-88.3-79.4-94.2l-153-23.9l40.8-40.9c7.8-7.8 9.4-20.1 3.9-29.8l-23.8-41.7l38.2-50.9c8-10.6 6.1-25.9-4.3-34.1s-25.2-6.3-33.2 4.4l-48 63.9c-5.9 7.9-6.6 18.6-1.7 27.2l22.7 39.4l-50.2 50.3v-38.2c0-14.9-10.2-27.4-24-31V63.9c0-4.4-3.6-8-8-8s-8 3.6-8 8v57.2c-13.8 3.6-24 16.1-24 31v38.1L237.8 140l22.6-39.5c4.9-8.6 4.2-19.3-1.7-27.2l-48-63.9c-8-10.6-22.8-12.6-33.2-4.4s-12.2 23.5-4.3 34.1L211.4 90l-23.9 41.7c-5.5 9.7-3.9 22 3.9 29.8l40.8 40.9l-153 23.9C34 232.3 0 272.7 0 320.6c0 84.6 97.6 127 154.6 67.1L288 266v.3l-66.5 86.4c-3.3 4.3-5.1 9.6-5.1 15.1v54.7l-42.1 49c-8.6 10.1-7.7 25.5 2.1 34.3s24.7 7.9 33.4-2.1l48-55.9c3.8-4.4 5.9-10.2 5.9-16.1v-55.4l24.3-31.6v63.1c0 17.7 14.3 32 32 32s32-14.3 32-32v-63.1l24.3 31.6v55.4c0 5.9 2.1 11.7 5.9 16.1l48 55.9c8.6 10.1 23.6 11 33.4 2.1z"/>
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                            <h4 class="text-center">Mosquitoes</h4>
+                            <p class="text-center fs-5">Expert solutions to eliminate mosquitoes, reclaiming comfort.</p>
+                            <button
+                                onclick="mosquitoService()"
+                                type="button" class="learn-more btn btn-primary border-0 rounded-pill px-4 py-3">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".9s">
+                        <div class="bg-light rounded p-5 services-item">
+                            <div class="d-flex" style="align-items: center; justify-content: center;">
+                                <div class="mb-4 rounded-circle services-inner-icon">
+                                    <i class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="5em" viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M21.33 17.39c1.4 1.27.47 3.61-1.41 3.61h-8.86A5.04 5.04 0 0 1 6 15.94v-.05c-2.3-.47-4-2.48-4-4.89c0-2.75 2.22-5 5-5h2.5c.3 0 .5-.23.5-.5S9.8 5 9.5 5H7V3h2.5C10.88 3 12 4.13 12 5.5C12 6.89 10.88 8 9.5 8H7c-1.66 0-3 1.33-3 3c0 1.37.92 2.5 2.14 2.87c.56-2.2 2.53-3.87 4.92-3.87c.8 0 1.6.22 2.3.55c-1.41.79-2.36 2.25-2.36 3.95c0 1.25.5 2.37 1.33 3.17l.7-.7c-.65-.61-1.03-1.5-1.03-2.47c0-2.59 2.34-3.5 3.5-3.5c2.08 0 3.95 1.89 3.44 4.23zM18 19c.56 0 1-.44 1-1s-.44-1-1-1s-1 .44-1 1s.44 1 1 1" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                            <h4 class="text-center">Rodents</h4>
+                            <p class="text-center fs-5">Comprehensive rodent control, safeguarding against infestations.</p>
+                            <button
+                                onclick="rodentService()"
+                                type="button" class="learn-more btn btn-primary border-0 rounded-pill px-4 py-3">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".9s">
+                        <div class="bg-light rounded p-5 services-item">
+                            <div class="d-flex" style="align-items: center; justify-content: center;">
+                                <div class="mb-4 rounded-circle services-inner-icon">
+                                    <i class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="3.5em" viewBox="0 0 36 36" transform="rotate(45)">
+                                                <path fill="currentColor" d="M7.5 24.516a.999.999 0 0 1-.707-1.707L22.81 6.793a.999.999 0 1 1 1.414 1.414L8.207 24.223a1 1 0 0 1-.707.293m8.282-11.738a1.001 1.001 0 0 1-.784-1.621c.113-.144 2.571-3.361.971-7.572a1 1 0 1 1 1.869-.711c2.017 5.307-1.139 9.357-1.274 9.527a.996.996 0 0 1-.782.377m3.89 3.888a.997.997 0 0 1-.782-1.621c.138-.172 3.435-4.197 9.323-2.726a.999.999 0 0 1 .727 1.213a1.002 1.002 0 0 1-1.212.728c-4.623-1.157-7.172 1.905-7.278 2.036a1 1 0 0 1-.778.37M6.454 18.511c-1.096 0-2.301-.186-3.58-.671a1 1 0 1 1 .71-1.87c4.219 1.604 7.439-.866 7.574-.972a1.003 1.003 0 0 1 1.403.166a.997.997 0 0 1-.159 1.4c-.129.103-2.495 1.947-5.948 1.947m1.564-8.066c-1.829 0-4.968-.482-7.542-3.332a1 1 0 1 1 1.484-1.34C4.984 9.122 8.976 8.392 9.146 8.36a.999.999 0 0 1 .392 1.961a8.243 8.243 0 0 1-1.52.124"/>
+                                                <path fill="currentColor" d="M9.341 10.341a1 1 0 0 1-.982-1.195c.034-.173.76-4.163-2.587-7.185A1 1 0 1 1 7.113.477c4.214 3.806 3.251 8.849 3.207 9.062a1 1 0 0 1-.979.802m3.948 18.63a1 1 0 0 1-.969-.758c-1.473-5.895 2.554-9.186 2.726-9.323a1 1 0 0 1 1.249 1.561c-.14.114-3.187 2.667-2.035 7.277a1 1 0 0 1-.971 1.243"/>
+                                                <path fill="currentColor" d="M29.844 19.167c-2.96-2.959-6.095-3.569-8.915-2.069c-.157-1.874-1.166-4.007-2.521-5.363c-1.488-1.488-3.008-1.653-4.405-1.044c1.058-2.465.6-5.43-.826-6.856c-1.843-1.843-4.594-.411-7.174 2.168c-2.58 2.58-4.012 5.331-2.168 7.174c1.425 1.426 4.391 1.883 6.856.826c-.61 1.397-.444 2.918 1.044 4.405c1.354 1.354 3.489 2.363 5.363 2.521c-1.5 2.82-.891 5.954 2.069 8.915c3.75 3.749 12.204 5.527 14.204 3.527s.223-10.455-3.527-14.204"/>
+                                        </svg>                                        
+                                    </i>
+                                </div>
+                            </div>
+                            <h4 class="text-center">Ants</h4>
+                            <p class="text-center fs-5">Precise elimination for a pest-free living or working space.</p>
+                        <button
+                            onclick="antService()"
+                            type="button" class="learn-more btn btn-primary border-0 rounded-pill px-4 py-3">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.1s">
+                        <div class="bg-light rounded p-5 services-item">
+                            <div class="d-flex" style="align-items: center; justify-content: center;">
+                                <div class="mb-4 rounded-circle services-inner-icon">
+                                    <i class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 15 15">
+                                            <path fill="currentColor" fill-rule="evenodd"
+                                                d="M4 3.941V3.5a3.5 3.5 0 1 1 7 0v.441l2.776-1.388l.448.894l-2.953 1.477l.043.086A6.5 6.5 0 0 1 12 7.916V8h3v1h-3v1.5c0 .625-.127 1.22-.358 1.762l2.582 1.29l-.448.895l-2.627-1.313A4.494 4.494 0 0 1 7.5 15a4.494 4.494 0 0 1-3.65-1.866l-2.626 1.313l-.448-.894l2.582-1.291A4.486 4.486 0 0 1 3 10.5V9H0V8h3v-.084a6.5 6.5 0 0 1 .686-2.906l.043-.086L.776 3.447l.448-.894zM5 3.5a2.5 2.5 0 0 1 5 0V4H5z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                            <h4>Wood Borer</h4>
+                            <p class="fs-5">Expert care to eliminate wood-boring insects, preserving structures.</p>
+                        <button
+                            onclick="borerService()"
+                            type="button" class="learn-more btn btn-primary border-0 rounded-pill px-4 py-3">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.1s">
+                        <div class="bg-light rounded p-5 services-item">
+                            <div class="d-flex" style="align-items: center; justify-content: center;">
+                                <div class="mb-4 rounded-circle services-inner-icon">
+                                    <i class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 16 16">
+                                            <g fill="currentColor">
+                                                <path
+                                                    d="M4.978.855a.5.5 0 1 0-.956.29l.41 1.352A5 5 0 0 0 3 6h10a5 5 0 0 0-1.432-3.503l.41-1.352a.5.5 0 1 0-.956-.29l-.291.956A5 5 0 0 0 8 1a5 5 0 0 0-2.731.811l-.29-.956z" />
+                                                <path
+                                                    d="M13 6v1H8.5v8.975A5 5 0 0 0 13 11h.5a.5.5 0 0 1 .5.5v.5a.5.5 0 1 0 1 0v-.5a1.5 1.5 0 0 0-1.5-1.5H13V9h1.5a.5.5 0 0 0 0-1H13V7h.5A1.5 1.5 0 0 0 15 5.5V5a.5.5 0 0 0-1 0v.5a.5.5 0 0 1-.5.5zm-5.5 9.975V7H3V6h-.5a.5.5 0 0 1-.5-.5V5a.5.5 0 0 0-1 0v.5A1.5 1.5 0 0 0 2.5 7H3v1H1.5a.5.5 0 0 0 0 1H3v1h-.5A1.5 1.5 0 0 0 1 11.5v.5a.5.5 0 1 0 1 0v-.5a.5.5 0 0 1 .5-.5H3a5 5 0 0 0 4.5 4.975" />
+                                            </g>
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                            <h4>Bedbug</h4>
+                            <p class="fs-5">Thorough removal of bedbugs, restoring peaceful sleep.</p>
+                        <button
+                            onclick="bedbugService()"
+                            type="button" class="learn-more btn btn-primary border-0 rounded-pill px-4 py-3">Learn More</button>
+                        </div>
+                    </div>                  
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.1s">
+                        <div class="bg-light rounded p-5 services-item">
+                            <div class="d-flex" style="align-items: center; justify-content: center;">
+                                <div class="mb-4 rounded-circle services-inner-icon">
+                                    <i class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M6.056 8.3a7.01 7.01 0 0 1 .199-.3h11.49c.069.098.135.199.199.3l2.02-1.166l1 1.732l-2.213 1.278c.162.59.249 1.213.249 1.856v1h3v2h-3a6.96 6.96 0 0 1-.536 2.69l2.5 1.444l-1 1.732l-2.526-1.458A6.992 6.992 0 0 1 13 21.929V14h-2v7.93a6.992 6.992 0 0 1-4.438-2.522l-2.526 1.458l-1-1.732l2.5-1.443A6.98 6.98 0 0 1 5 15H2v-2h3v-1c0-.643.087-1.265.249-1.856L3.036 8.866l1-1.732zM8 6a4 4 0 1 1 8 0z" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                            <h4>Termites</h4>
+                            <p class="fs-5">Advanced control for long-lasting structural preservation.</p>
+                        <button
+                            onclick="termiteService()"
+                            type="button" class="learn-more btn btn-primary border-0 rounded-pill px-4 py-3">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.1s">
+                        <div class="bg-light rounded p-5 services-item">
+                            <div class="d-flex" style="align-items: center; justify-content: center;">
+                                <div class="mb-4 rounded-circle services-inner-icon">
+                                    <i class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4.5em" height="4.5em" viewBox="0 0 32 32">
+                                            <path fill="currentColor"
+                                                d="M20.757 8.433a4.989 4.989 0 0 0-.75-1.43a.983.983 0 0 0 .853-1.206a4.998 4.998 0 0 0-9.7 0a.977.977 0 0 0 .853 1.207c-.324.43-.58.914-.752 1.436l-.491-.402c-.49-.4-.76-.99-.76-1.62v-2.2c0-.49-.19-.96-.54-1.31l-.68-.68a.754.754 0 0 0-1.06 0c-.29.29-.29.77 0 1.06l.67.68c.07.07.1.15.1.25v2.2c0 1.08.48 2.09 1.31 2.77l1.203.99l.002.051l-1.503 1.35l-.462-.462a3.72 3.72 0 0 0-2.67-1.11H5.7c-.41 0-.75.34-.75.75s.34.75.75.75h.68c.61 0 1.18.24 1.61.67l.405.406l-1.348 1.212A16.675 16.675 0 0 0 1.5 26.259a4.266 4.266 0 0 0 4.26 4.248a4.23 4.23 0 0 0 2.55-.85l4.203-3.147l.017.017l.07.07a4.83 4.83 0 0 0 6.82 0l.07-.07l.017-.017l4.202 3.147c.738.556 1.634.85 2.551.85a4.264 4.264 0 0 0 4.26-4.237v-.002a16.715 16.715 0 0 0-5.546-12.472l-1.386-1.246l.372-.373c.43-.43 1-.67 1.61-.67h.68c.41 0 .75-.34.75-.75s-.34-.75-.75-.75h-.68c-1.01 0-1.96.39-2.67 1.11l-.429.43l-1.466-1.318l.003-.06l1.192-.992a3.57 3.57 0 0 0 1.31-2.77v-2.2c0-.1.03-.18.1-.25l.68-.68c.29-.29.29-.77 0-1.06a.754.754 0 0 0-1.06 0l-.68.68c-.35.35-.54.82-.54 1.31v2.2c0 .63-.27 1.22-.76 1.62zm.056 2.968l1.197 1.076v14.658l-2-1.497a6.265 6.265 0 0 1-2.5-5v-5.86a5.01 5.01 0 0 0 3.303-3.377m-9.606 0a5.01 5.01 0 0 0 3.303 3.377v5.86a6.263 6.263 0 0 1-2.5 5l-2 1.497V12.477zM23.01 27.884v-7.047l6.367 6.367a3.267 3.267 0 0 1-3.117 2.303a3.234 3.234 0 0 1-1.949-.649zm1.296-13.344a15.715 15.715 0 0 1 5.211 11.385l-6.507-6.507v-6.043zM9.01 27.883l-1.3.973v.001a3.234 3.234 0 0 1-1.95.65a3.265 3.265 0 0 1-3.116-2.305l6.366-6.366zm-6.507-1.96A15.674 15.674 0 0 1 7.714 14.54l1.296-1.164v6.043zm9.907-20.73a3.614 3.614 0 0 1 2.583-2.092H15v.346c0 .967-.786 1.746-1.746 1.746zm7.19 0h-.844c-.96 0-1.746-.779-1.746-1.746v-.346h.007A3.613 3.613 0 0 1 19.6 5.194"/>
+                                          </svg>                                          
+                                    </i>
+                                </div>
+                            </div>
+                            <h4>Flies</h4>
+                            <p class="fs-5">Strategic measures to prevent and eliminate fly nuisances.</p>
+                        <button
+                            onclick="flyService()"
+                            type="button" class="learn-more btn btn-primary border-0 rounded-pill px-4 py-3">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.3s">
+                        <div class="bg-light rounded p-5 services-item">
+                            <div class="d-flex" style="align-items: center; justify-content: center;">
+                                <div class="mb-4 rounded-circle services-inner-icon">
+                                    <i class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 32 32">
+                                            <path fill="currentColor"
+                                                d="M5.01 7.51C5.01 4.47 7.48 2 10.52 2c2.51 0 4.634 1.694 5.29 4.008a3.037 3.037 0 0 1 .416-.002A5.512 5.512 0 0 1 21.52 2c3.04 0 5.51 2.47 5.51 5.51c0 .04 0 .08-.01.11v4.89a.49.49 0 0 1-.98 0V7.57c0-2.52-2.03-4.59-4.55-4.57a4.52 4.52 0 0 0-4.286 3.239A3.01 3.01 0 0 1 18.8 7.843a5.03 5.03 0 0 1 1.66 1.851l.141-.044c.32-.1.54-.4.54-.74V6.93c0-.83.45-1.59 1.18-1.99l.57-.31c.37-.2.82-.06 1.02.3c.2.37.06.82-.3 1.02l-.57.31c-.25.14-.4.4-.4.68v1.99c0 1-.64 1.87-1.59 2.17l-.15.047a.958.958 0 0 1-.473.73a2.387 2.387 0 0 1 1.093 2.013v1.15l.2-.2a1.831 1.831 0 0 1 2.69.12l1.99 2.36c.1.11.25.18.4.18h.57c.41 0 .75.34.75.75s-.34.75-.75.75h-.57c-.6 0-1.16-.26-1.56-.71l-1.99-2.36a.302.302 0 0 0-.23-.12c-.05-.01-.15 0-.24.09l-1.26 1.26V20h1.94c.49 0 .93.22 1.23.62c.29.38.38.87.25 1.34l-1.43 4.99c0 .01 0 .02.01.04c.02.02.03.02.04.02h.71c.41 0 .75.34.75.75s-.34.75-.75.75h-.71c-.49 0-.94-.23-1.24-.62c-.29-.4-.38-.89-.25-1.36l1.43-4.99c0-.01 0-.02-.01-.03c-.01-.01-.02-.01-.03-.01h-1.94v2.26a6.507 6.507 0 0 1-2.448 5.09l-1.3 1.04a2.8 2.8 0 0 1-3.493.001l-1.31-1.04l-.002-.001a6.542 6.542 0 0 1-2.447-5.1V21.5H8.58c-.01 0-.02 0-.03.01c-.01.01-.01.02-.01.03l1.43 4.99c.13.47.04.96-.25 1.36c-.3.39-.75.62-1.24.62h-.71c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h.71c.01 0 .02 0 .04-.02c.01-.02.01-.03.01-.04L7.1 21.96c-.13-.47-.04-.96.25-1.35c.29-.39.74-.61 1.23-.61h1.94v-2.92L9.34 15.9c-.09-.09-.19-.1-.24-.09c-.05 0-.15.02-.23.12l-1.99 2.36c-.4.45-.96.71-1.56.71h-.57a.749.749 0 1 1 0-1.5h.57c.15 0 .3-.07.4-.18l1.99-2.36a1.831 1.831 0 0 1 2.69-.12l.12.12v-1.08a2.38 2.38 0 0 1 1.096-2.006a.95.95 0 0 1-.47-.732l-.166-.052c-.95-.3-1.59-1.17-1.59-2.17V6.94c0-.28-.15-.54-.4-.68l-.58-.31c-.36-.2-.5-.65-.3-1.02c.2-.36.65-.5 1.02-.3l.57.31c.73.4 1.18 1.16 1.18 1.99v1.98c0 .34.22.64.54.74l.176.055a5.094 5.094 0 0 1 1.666-1.863a3.01 3.01 0 0 1 1.576-1.596A4.52 4.52 0 0 0 10.55 3C8.03 2.98 6 5.05 6 7.57v4.94a.49.49 0 0 1-.98 0V7.62c-.01-.03-.01-.07-.01-.11m6.708 17.709a5.55 5.55 0 0 0 1.874 2.85l.001.001l1.309 1.04a1.8 1.8 0 0 0 2.246 0l1.3-1.04l.121-.1a5.503 5.503 0 0 0 1.755-2.75a6.237 6.237 0 0 1-3.304-5.51V12.5h-2v7.21a6.237 6.237 0 0 1-3.302 5.509" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                            <h4>Cockroaches</h4>
+                            <p class="fs-5">Effective cockroach removal for a hygienic environment.</p>
+                        <button
+                            onclick="cockroachService()"
+                            type="button" class="learn-more btn btn-primary border-0 rounded-pill px-4 py-3">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.5s">
+                        <div class="bg-light rounded p-5 services-item">
+                            <div class="d-flex" style="align-items: center; justify-content: center;">
+                                <div class="mb-4 rounded-circle services-inner-icon">
+                                    <i class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 64 64">
+                                            <path fill="currentColor"
+                                                d="M58.8 25.5c-.6 0-2.7 1-3.5 1.1c-1.6.1-2.4-.6-1.8-1.8c.3-.5 2-2 2.2-2.5c.7-1.3-1.5-2.2-2.1-1c-.3.5-.4 2.7-.6 3.2c-.5 1-1.8 1.1-2.3.4c-.4-.6-1-2.8-1.4-3.3c-.9-1.2-2.8.1-1.9 1.2c.3.5 2.5 1.8 2.7 3c-2.6-.5-4.1-3-4.9-4.8c.5-.7.9-1.4 1.4-2.1c1.8 1 4 .7 5.5-.9c1.7-2.1 12.3-11.6 9.6-15.1c-2.8-3.5-14.6 4.8-17 6.1c-2 1.1-2.7 3.3-1.9 5.3c-1.6.9-3.8 1.8-6.7 2.6c-1.8-.1-6.2-.8-3.4-5.1c.8.8 1.1 3.1 1.4 3.6c.7 1.4 2.7.2 2-1.2c-.3-.5-2-2-2.4-2.6c-.4-.7.3-1.9 1.4-1.9c.6 0 2.6.8 3.2.8c1.4 0 1.5-2.3.1-2.3c-.6 0-2.7.9-3.3.9c-1.3.1-1.6-1-.8-2.3c.4-.6 2.3-2.1 2.6-2.6c.9-1.4-1-2.5-1.9-1.1c-.3.5-.8 2.8-1.2 3.5c-.8 1.3-1.9 1.6-2.5.4c-.3-.5-.5-2.7-.7-3.2c-.7-1.3-2.7-.1-2 1.1c.3.5 1.9 1.9 2.2 2.4c.5.9-.2 2.1-1.1 2.1c-.7 0-2.9-.8-3.5-.8c-1.4 0-1.5 2.3-.1 2.3c.5 0 2.7-.8 3.8-.5c-.9 1.2-4.3 6.1.2 8.8c-4.9 2.3-11.3 6.2-16.6 11.8c-1.6.4-4.1.4-3.8-3.9c1.1.2 2.6 2.1 3.1 2.4c1.3.8 2.5-1.2 1.1-2c-.5-.3-2.7-.7-3.4-1.1c-.7-.4-.7-1.8.3-2.4c.5-.3 2.7-.6 3.2-.9c1.2-.7.2-2.8-1.1-2c-.5.3-1.9 2.1-2.4 2.4c-1.1.7-1.9 0-1.9-1.6c0-.8.9-3 .9-3.6c0-1.7-2.2-1.7-2.2 0c0 .6.8 2.8.8 3.6c0 1.6-.9 2.3-2 1.6c-.5-.3-1.8-2.1-2.3-2.4c-1.2-.8-2.4 1.2-1.2 2c.5.3 2.6.7 3.2 1c.9.6.9 1.9.2 2.4c-.6.4-2.9.7-3.4 1c-1.2.7-.2 2.8 1.1 2c.4-.3 1.8-2 2.9-2.4c-.2 1.5-.5 6.7 3.9 7.4c-4.1 5.3-8.8 19.7 7.8 25.8c16.2 6 37.3-4.2 41.4-23.5c0 0-9 24-31.1 19.3c-6.7-1.4-15.4-5.8-7.2-12.2c1.1-.8 2.2-1.6 3.5-2.4c1 4.4 5.7 4.9 8.1 4.9c-.1 1.2-2.1 2.6-2.4 3.1c-.8 1.3 1.2 2.5 2 1.1c.3-.5.7-2.7 1.1-3.4c.4-.7 1.8-.7 2.4.3c.3.5.6 2.7.9 3.2c.7 1.2 2.8.2 2-1.1c-.3-.5-2.1-1.9-2.4-2.4c-.7-1.1 0-1.9 1.6-1.9c.8 0 3 .9 3.6.9c1.7 0 1.7-2.2 0-2.2c-.6 0-2.8.8-3.6.8c-1.6 0-2.3-.9-1.6-2c.3-.5 2.1-1.8 2.4-2.3c.8-1.2-1.2-2.4-2-1.2c-.3.5-.7 2.6-.9 3.2c-.6.9-1.9.9-2.4.2c-.4-.6-.7-2.9-1-3.4c-.7-1.2-2.8-.2-2 1.1c.3.5 2.2 2 2.4 3.2c-2.2-.3-3.3-1.5-3.8-3c-.1-.5-.1-1.2.5-2.1c1.4-.8 2.6-1.6 3.6-2.4c4.9-3.9 7.5-7.6 9.5-10.9c1.3 3.7 5.4 3.6 7.7 3.2c.1 1.2-1.9 2.9-2.1 3.4c-.7 1.4 1.4 2.4 2.1.9c.3-.5.4-2.8.7-3.4c.4-.7 1.7-.8 2.4 0c.3.5.9 2.6 1.2 3.1c.8 1.2 2.8-.1 1.9-1.2c-.3-.5-2.3-1.7-2.6-2.1c-.8-1-.2-1.9 1.4-2c.8 0 3 .6 3.7.6c1.3-.2 1.1-2.3-.5-2.2" />
+                                            <path fill="currentColor" d="M50.4 9.5c-1.2 1-3.1.8-4.1-.4c-1-1.2-.8-3 .4-4c1.2-1 3.1-.8 4.1.4c1.1 1.2.9 3-.4 4" />
+                                            <path fill="currentColor" d="M49.5 7.2c-.6.5-1.5.4-2-.2c-.5-.6-.4-1.5.2-2c.6-.5 1.5-.4 2 .2c.5.6.4 1.5-.2 2" />
+                                            <path fill="currentColor" d="M56.3 16.6c-1.2 1-3.1.8-4.1-.4c-1-1.2-.8-3 .4-4c1.2-1 3.1-.8 4.1.4c1 1.2.8 3-.4 4" />
+                                            <path fill="currentColor" d="M53.4 14.5c.6-.5 1.5-.4 2 .2c.5.6.4 1.5-.2 2c-.6.5-1.5.4-2-.2s-.4-1.4.2-2" />
+                                            <path fill="currentColor"
+                                                d="M39.2 56c-1.2.3-2.4.4-3.7.5c-2 2-1.8 2.6 1.8 4c1.3-.4 2.5-.9 3.8-1.4c-2.3-1-2.5-.9-1.9-3.1" />
+                                            <path fill="currentColor"
+                                                d="M29.2 56.1c-.3 0-2.5-.6-3.4-.9c-3.3 2.5.4 4.1 1.1 6.7c0 0 1.6.3 4.9-.2c-.9-3.1-4.7-3-2.6-5.6" />
+                                            <path fill="currentColor"
+                                                d="M21.4 53.3c-1.3-.8-2.4-1.7-3-2.7c-2.9 4.1-5.6-.8-4.2 7.8c1.7 1.3 4.5 2 4.5 2c-1.7-6-2.4-4.3 2.7-7.1" />
+                                            <path fill="currentColor"
+                                                d="M18.1 49.9c-.4-1.2-.2-2.5.9-4c-6.7-10.3-9.4-.2-12.5-1.5c-.1 1.5-.1 3 .3 4.5c6.7-.7 2.6-6.8 11.3 1" />
+                                            <path fill="currentColor"
+                                                d="M22 43.3c1.2-.9 2.6-1.7 3.9-2.6c-10.2-6.8 5.5-8-12.4-9.9c-1 1.1-2 2.2-3 3.5c13 3.2 1.5 2.7 11.5 9" />
+                                            <path fill="currentColor"
+                                                d="M20.6 24.6c13.4 1.5-.2 4.5 9.9 13.3c2.3-1.2 3.9-2.8 3.9-2.8c-7.3-6.5 9.5-9.4-10-13c-1.8.9-3.8 2.5-3.8 2.5" />
+                                            <path fill="currentColor"
+                                                d="M31.7 18.3c11.5 4.4 4.2 5.9 7.7 11.7c2-2.2 3.2-4.7 3.2-4.7c.8-8.7-2.1-4.6-6.7-8.5c-.1.1-2.7.9-4.2 1.5" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                            <h4>Lizards</h4>
+                            <p class="fs-5">Efficiently eliminate lizard pests for undisturbed peace.</p>
+                        <button onclick="lizardService()" type="button"
+                            class="learn-more btn btn-primary border-0 rounded-pill px-4 py-3">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.7s">
+                        <div class="bg-light rounded p-5 services-item">
+                            <div class="d-flex" style="align-items: center; justify-content: center;">
+                                <div class="mb-4 rounded-circle services-inner-icon">
+                                    <i class="fa-3x text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+                                            <path fill="currentColor" fill-rule="evenodd" d="M17.951 15.571a5.993 5.993 0 0 1-2.27 4.064a4.016 4.016 0 0 1-1.756 1.96a2 2 0 0 1-3.874 0a4.016 4.016 0 0 1-1.756-1.96a5.993 5.993 0 0 1-2.269-4.047a3.001 3.001 0 0 1-4.11-4.32L6.01 6.39a6 6 0 0 1 11.953-.033l4.12 4.91a3 3 0 0 1-4.132 4.304m-2.326-2.665l-1.678-2h-3.894l-1.678 2zm2.363-.296l1.032 1.229a1 1 0 1 0 1.532-1.286l-2.564-3.055zm-2-3.704v-2a4 4 0 0 0-8 0v2zM4.98 13.839l1.007-1.2V9.527l-2.54 3.027a1 1 0 1 0 1.533 1.285m7.007 5.067a4 4 0 0 1-4-4h8a4 4 0 0 1-4 4" clip-rule="evenodd" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                            <h4>Wasps</h4>
+                            <p class="fs-5">Effective measures to eliminate and prevent wasp infestations</p>
+                            <button onclick="waspService()" type="button"
+                                class="learn-more btn btn-primary border-0 rounded-pill px-4 py-3">Learn More</button>
+                        </div>
+                    </div>                    
+                </div>
+                <div hidden id="details-container" class="container-fluid details-container wow fadeIn bg-light rounded px-2 px-md-3 px-lg-4 py-4" data-wow-delay=".5s">
+                    <h4 id="details-header" class="text-start d-flex" style="align-items: center; justify-content: center;">Detailed Information</h2>
+                    <p id="details-placeholder" class="text-start fs-5">Error 404</p>
+                    <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-3" onclick="hideDetails('targetElement')">Go Back</button>
+                </div>
+                <button hidden type="button" class="btn btn-primary border-0 rounded-pill px-4 py-3 mt-4 wow fadeInUp" data-wow-delay=".3s">More Services</button>
+            </div>
+        </div>
+        <!-- Services End -->
+
+        <div hidden id="service-dec" class="service-dec">
+            <div id="general-service-dec" class="general-service-dec">Designed to eliminate pests and maintain a pest-free environment. Our licensed
+                professionals specialize in identifying and controlling various pests, including insects like ants and
+                cockroaches,
+                as well as rodents such as mice. Our methods go beyond traditional treatments, incorporating environmentally
+                responsible approaches like biological control and preventive measures. Tailored to address specific
+                infestations,
+                our strategies ensure effective solutions. Whether you need routine preventive measures or immediate
+                intervention
+                for a specific pest issue, our team is committed to delivering reliable and safe pest control services.
+                Trust us to
+                keep your property clean, healthy, and welcoming.</div>
+            <div id="spider-service-dec" class="container spider-service-dec">
+                <div class="row">
+                    <div class="col">
+                        <!--h2 class="fs-4">Spider Pest Control Treatment:</h2-->
+                        <p>Spiders are arachnids that can become problematic pests when they infest homes or businesses. While
+                            most
+                            spiders are harmless to humans, some species can deliver painful bites or cause fear and discomfort,
+                            especially to those with arachnophobia. Identifying spiders typically involves recognizing their
+                            eight
+                            legs
+                            and two body segments, although their size, color, and markings can vary widely between species.</p>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we specialize in providing effective spider pest control treatments to eliminate
+                            infestations
+                            and
+                            prevent their recurrence. Our services are designed to be safe, efficient, and tailored to the
+                            specific
+                            needs of our clients.</p>
+                        <ul>
+                            <li><strong>Interior and Exterior Treatment:</strong> We will apply targeted treatments to areas
+                                where
+                                spiders are likely
+                                to hide or breed, such as basements, attics, crawl spaces, and wall voids. This may involve the
+                                use
+                                of
+                                residual insecticides, dusts, or baits to effectively eliminate spiders and their prey.</li>
+                            <li><strong>Web Removal:</strong> We will remove existing spider webs and egg sacs from around your
+                                property to deter
+                                spiders from returning and to improve the overall appearance of your home or business.</li>
+                            <li><strong>Sealing Entry Points:</strong> We will identify and seal potential entry points, such as
+                                cracks, gaps, and
+                                openings in doors, windows, and walls, to prevent spiders from gaining access to your property.
+                            </li>
+                            <li><strong>Environmental Modifications:</strong> We may recommend environmental modifications, such
+                                as
+                                reducing clutter,
+                                eliminating sources of moisture, and minimizing outdoor lighting, to make your property less
+                                attractive to
+                                spiders and other pests.</li>
+                            <li><strong>Follow-Up Inspections:</strong> We offer follow-up inspections and treatments as needed
+                                to
+                                ensure that your
+                                spider problem is effectively resolved and to address any new infestations that may arise.</li>
+                        </ul>
+                        <p>At <strong><span class="pestcocolour">PESTCO</span></strong>, we understand the importance of providing safe and eco-friendly pest
+                            control
+                            solutions. That's
+                            why we use products and methods that are approved by regulatory authorities and are safe for use
+                            around
+                            children, pets, and the environment.</p>
+                        <p>Don't let spiders take over your home or business. Contact <span class="pestcocolour">PESTCO</span> today to schedule a spider pest
+                            control
+                            treatment and regain peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="mosquito-service-dec" class="container mosquito-service-dec">
+                <div class="row">
+                    <div class="col">
+                        <!--h2 class="fs-4">Mosquito Pest Control Treatment:</h2-->
+                        <p>Mosquitoes are tiny insects that can cause significant nuisance and health risks due to their ability to
+                            transmit diseases such as malaria, dengue fever, and Zika virus. Identifying mosquitoes is relatively
+                            straightforward—they have slender bodies with long legs and wings, and they often emit a high-pitched
+                            buzzing sound.</p>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we specialize in providing comprehensive mosquito pest control treatments to effectively
+                            manage infestations and reduce the risk of mosquito-borne illnesses. Our services are designed to be
+                            safe, efficient, and tailored to meet the specific needs of our clients.</p>
+                        <ul>
+                            <li><strong>Mosquito Larvicide Application:</strong> We will target areas of standing water where
+                                mosquitoes breed by applying larvicides to prevent mosquito larvae from developing into adult
+                                mosquitoes.</li>
+                            <li><strong>Adult Mosquito Control:</strong> We will use a combination of residual insecticides, fogging
+                                treatments, and mosquito traps to reduce adult mosquito populations and provide immediate relief
+                                from biting mosquitoes.</li>
+                            <li><strong>Breeding Site Elimination:</strong> We will advise you on how to eliminate or modify
+                                potential mosquito breeding sites on your property, such as removing stagnant water from gutters,
+                                bird baths, and flower pots.</li>
+                            <li><strong>Environmental Modifications:</strong> We may recommend environmental modifications, such as
+                                trimming vegetation, improving drainage, and installing screens on windows and doors, to reduce
+                                mosquito harborage and entry into your home or business.</li>
+                            <li><strong>Personal Protection Measures:</strong> We will educate you on personal protection measures,
+                                such as wearing long-sleeved clothing and using insect repellents, to minimize your risk of mosquito
+                                bites when outdoors.</li>
+                            <li><strong>Seasonal Maintenance:</strong> We offer seasonal maintenance programs to monitor mosquito
+                                activity and provide ongoing treatments as needed to ensure long-term mosquito control.</li>
+                        </ul>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we prioritize the safety and well-being of our clients, their families, and the environment.
+                            That's why we use products and methods that are approved by regulatory authorities and are safe for use
+                            around children, pets, and wildlife.</p>
+                        <p>Don't let mosquitoes ruin your outdoor enjoyment or jeopardize your health. Contact <span class="pestcocolour">PESTCO</span> today to
+                            schedule a mosquito pest control treatment and take back control of your property.</p>
+                        <p class="fw-bold"><span class="pestcocolour">PESTCO</span> mosquito management is a multifaceted strategy aimed at reducing mosquito
+                            populations and minimizing their impact on your surroundings. We conduct thorough inspections to
+                            identify breeding grounds and implement larvicidal treatments when necessary. Additionally, adult
+                            mosquito control methods are applied using safe and effective measures, ensuring a significant reduction
+                            in mosquito activity. Our approach extends to outdoor spaces, providing a comprehensive solution for a
+                            mosquito-free environment.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="rodent-service-dec" class="container rodent-service-dec">
+                <div class="row">
+                    <div class="col">
+                        <!--h2 class="fs-4">Rodent Pest Control Treatment:</h2-->
+                        <p>Rodents are mammals characterized by their continuously growing incisors that they must gnaw on to keep
+                            trimmed. They can become significant pests when they infest homes or businesses, causing damage to
+                            property, contaminating food, and transmitting diseases.</p>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we specialize in providing effective rodent pest control treatments to eliminate infestations
+                            and prevent their recurrence. Our services are designed to be safe, efficient, and tailored to the
+                            specific needs of our clients.</p>
+                        <ul>
+                            <li><strong>Inspection and Assessment:</strong> Our trained technicians will conduct a thorough
+                                inspection of your property to identify rodent entry points, nesting areas, and food sources.</li>
+                            <li><strong>Exclusion and Sealing:</strong> We will seal entry points such as gaps in walls, roofs, and
+                                foundations to prevent rodents from entering your property.</li>
+                            <li><strong>Trapping and Removal:</strong> We will strategically place traps to capture and remove
+                                rodents from your property safely and humanely.</li>
+                            <li><strong>Baiting:</strong> We may use rodenticides in tamper-resistant bait stations to effectively
+                                control rodent populations.</li>
+                            <li><strong>Sanitation and Clean-up:</strong> We will advise you on proper sanitation practices to
+                                eliminate rodent attractants and remove rodent droppings and nesting materials.</li>
+                            <li><strong>Monitoring and Prevention:</strong> We offer ongoing monitoring and preventive measures to
+                                ensure long-term rodent control and minimize the risk of future infestations.</li>
+                        </ul>
+                        <p>At <span class="text-primary"><span class="pestcocolour">PESTCO</span></span>, we understand the importance of providing safe and
+                            eco-friendly pest control solutions. That's why we use products and methods that are approved by
+                            regulatory authorities and are safe for use are safe for use around children, pets, and the environment.
+                        </p>
+                        <p>Don't let rodents take over your home or business. Contact <span class="pestcocolour">PESTCO</span> today to schedule a rodent pest control
+                            treatment and regain peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="ant-service-dec" class="container">
+                <div class="row">
+                    <div class="col">
+                        <!--h2 class="fs-4">Ant Pest Control Treatment:</h2-->
+                        <p>Ants are social insects that can become problematic pests when they infest homes or businesses. They
+                            are attracted to food sources and can contaminate food, damage property, and cause annoyance.</p>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we specialize in providing effective ant pest control treatments to eliminate infestations
+                            and prevent their recurrence. Our services are designed to be safe, efficient, and tailored to the
+                            specific needs of our clients.</p>
+                        <ul>
+                            <li><strong>Identification:</strong> Our trained technicians will identify the ant species present
+                                and assess the extent of the infestation.</li>
+                            <li><strong>Exterior Barrier Treatment:</strong> We will apply a barrier treatment around the
+                                exterior of your property to prevent ants from entering.</li>
+                            <li><strong>Interior Treatment:</strong> Targeted treatments will be applied indoors to eliminate
+                                ants and their nests.</li>
+                            <li><strong>Baiting:</strong> We may use ant baits to attract ants and eliminate entire colonies.
+                            </li>
+                            <li><strong>Sealing Entry Points:</strong> We will seal cracks, gaps, and openings to prevent ants
+                                from gaining access to your property.</li>
+                            <li><strong>Sanitation Recommendations:</strong> We will provide recommendations for proper
+                                sanitation practices to remove ant attractants.</li>
+                            <li><strong>Follow-Up Inspections:</strong> We offer follow-up inspections and treatments as needed
+                                to ensure long-term ant control.</li>
+                        </ul>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we prioritize the safety and well-being of our clients, their families, and the
+                            environment. That's why we use products and methods that are approved by regulatory authorities and
+                            are safe for use around children, pets, and wildlife.</p>
+                        <p>Don't let ants take over your home or business. Contact <span class="pestcocolour">PESTCO</span> today to schedule an ant pest control
+                            treatment and regain peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="borer-service-dec" class="container">
+                <div class="row">
+                    <div class="col">
+                        <p>Wood borers are insects that tunnel into wood, causing damage to wooden structures, furniture, and other wooden items. Infestations can weaken the integrity of the wood and lead to structural problems.</p>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we specialize in providing effective wood borer pest control treatments to eliminate infestations and prevent further damage. Our services are designed to be safe, efficient, and tailored to the specific needs of our clients.</p>
+                        <ul>
+                            <li><strong>Identification:</strong> Our trained technicians will identify the type of wood borer present and assess the extent of the infestation.</li>
+                            <li><strong>Treatment:</strong> We will apply targeted treatments to eliminate wood borers and protect wooden structures from further damage.</li>
+                            <li><strong>Wood Preservation:</strong> We may recommend wood preservation techniques to strengthen and protect wooden items from future infestations.</li>
+                            <li><strong>Monitoring:</strong> We offer monitoring services to detect any signs of wood borer activity and provide timely treatments as needed.</li>
+                            <li><strong>Preventive Measures:</strong> We will advise you on preventive measures to reduce the risk of wood borer infestations, such as proper wood storage and maintenance.</li>
+                            <li><strong>Follow-Up Inspections:</strong> We offer follow-up inspections and treatments to ensure long-term protection against wood borers.</li>
+                        </ul>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we understand the importance of preserving wooden structures and items. That's why we use products and methods that are safe for use around wooden materials and the environment.</p>
+                        <p>Don't let wood borers damage your property. Contact <span class="pestcocolour">PESTCO</span> today to schedule a wood borer pest control treatment and protect your wooden assets.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="bedbug-service-dec" class="container">
+                <div class="row">
+                    <div class="col">
+                        <p>Bed bugs are small, parasitic insects that feed on the blood of humans and animals, typically during the night. Infestations can lead to discomfort, allergic reactions, and sleep disturbances.</p>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we specialize in providing effective bed bug pest control treatments to eliminate infestations and ensure peace of mind. Our services are safe, efficient, and tailored to the specific needs of our clients.</p>
+                        <ul>
+                            <li><strong>Inspection:</strong> Our trained technicians will conduct a thorough inspection of your property to identify bed bug hiding spots and assess the extent of the infestation.</li>
+                            <li><strong>Heat Treatment:</strong> We may use heat treatments to eliminate bed bugs and their eggs from infested areas.</li>
+                            <li><strong>Chemical Treatment:</strong> We will apply targeted chemical treatments to infested areas to kill bed bugs and prevent their spread.</li>
+                            <li><strong>Steam Treatment:</strong> Steam treatments can be used to kill bed bugs and their eggs on mattresses, furniture, and other infested items.</li>
+                            <li><strong>Monitoring:</strong> We offer monitoring services to detect any signs of bed bug activity and provide timely treatments as needed.</li>
+                            <li><strong>Preventive Measures:</strong> We will advise you on preventive measures to reduce the risk of bed bug infestations, such as proper hygiene practices and regular inspections.</li>
+                            <li><strong>Follow-Up Inspections:</strong> We offer follow-up inspections and treatments to ensure long-term protection against bed bugs.</li>
+                        </ul>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we understand the importance of a good night's sleep. That's why we use products and methods that are safe for use around sleeping areas and the environment.</p>
+                        <p>Don't let bed bugs disrupt your life. Contact <span class="pestcocolour">PESTCO</span> today to schedule a bed bug pest control treatment and restore comfort to your home.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="termite-service-dec" class="container">
+                <div class="row">
+                    <div class="col">
+                        <p>Termites are small insects that feed on cellulose found in wood and can cause significant damage to wooden structures and materials. Infestations can weaken the integrity of buildings and lead to costly repairs.</p>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we specialize in providing effective termite pest control treatments to eliminate infestations and protect your property from further damage. Our services are safe, efficient, and tailored to the specific needs of our clients.</p>
+                        <ul>
+                            <li><strong>Inspection:</strong> Our trained technicians will conduct a thorough inspection of your property to identify termite activity, entry points, and potential nesting sites.</li>
+                            <li><strong>Treatment:</strong> We offer a range of treatment options, including liquid termiticides, baiting systems, and barrier treatments, to eliminate termites and prevent their return.</li>
+                            <li><strong>Wood Treatment:</strong> We may recommend wood treatments to protect wooden structures and materials from termite damage.</li>
+                            <li><strong>Monitoring:</strong> We provide monitoring services to detect any signs of termite activity and provide timely treatments as needed.</li>
+                            <li><strong>Preventive Measures:</strong> We will advise you on preventive measures to reduce the risk of termite infestations, such as proper moisture control and regular inspections.</li>
+                            <li><strong>Follow-Up Inspections:</strong> We offer follow-up inspections and treatments to ensure long-term protection against termites.</li>
+                        </ul>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we understand the importance of protecting your investment. That's why we use products and methods that are safe for use around buildings and the environment.</p>
+                        <p>Don't let termites damage your property. Contact <span class="pestcocolour">PESTCO</span> today to schedule a termite pest control treatment and safeguard your home or business.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="fly-service-dec" class="container">
+                <div class="row">
+                    <div class="col">
+                        <p>Flies are common pests that can transmit diseases and cause annoyance in homes and businesses. Infestations can lead to hygiene concerns and discomfort for occupants.</p>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we specialize in providing effective fly pest control treatments to eliminate infestations and ensure a clean and healthy environment. Our services are safe, efficient, and tailored to the specific needs of our clients.</p>
+                        <ul>
+                            <li><strong>Identification:</strong> Our trained technicians will identify the species of flies present and assess the extent of the infestation.</li>
+                            <li><strong>Sanitation:</strong> We will advise you on proper sanitation practices to eliminate fly attractants, such as food debris and organic matter.</li>
+                            <li><strong>Exclusion:</strong> We will seal entry points such as gaps in windows, doors, and screens to prevent flies from entering your property.</li>
+                            <li><strong>Trapping:</strong> We may use fly traps and baits to capture and eliminate flies from your property.</li>
+                            <li><strong>Chemical Treatment:</strong> We will apply targeted chemical treatments to infested areas to kill flies and prevent their return.</li>
+                            <li><strong>Monitoring:</strong> We offer monitoring services to detect any signs of fly activity and provide timely treatments as needed.</li>
+                            <li><strong>Preventive Measures:</strong> We will provide recommendations for preventive measures to reduce the risk of fly infestations, such as proper waste management and regular inspections.</li>
+                        </ul>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we understand the importance of a pest-free environment. That's why we use products and methods that are safe for use around occupants and the environment.</p>
+                        <p>Don't let flies disrupt your daily life. Contact <span class="pestcocolour">PESTCO</span> today to schedule a fly pest control treatment and enjoy a pest-free environment.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="cockroach-service-dec" class="container">
+                <div class="row">
+                    <div class="col">
+                        <p>Cockroaches are common household pests that can contaminate food, spread diseases, and trigger allergic reactions in humans. Infestations can be difficult to eradicate and require professional treatment.</p>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we specialize in providing effective cockroach pest control treatments to eliminate infestations and ensure a healthy and hygienic environment. Our services are safe, efficient, and tailored to the specific needs of our clients.</p>
+                        <ul>
+                            <li><strong>Inspection:</strong> Our trained technicians will conduct a thorough inspection of your property to identify cockroach hiding spots, entry points, and nesting sites.</li>
+                            <li><strong>Baiting:</strong> We will strategically place cockroach baits to attract and eliminate cockroaches from your property.</li>
+                            <li><strong>Chemical Treatment:</strong> We will apply targeted chemical treatments to infested areas to kill cockroaches and prevent their return.</li>
+                            <li><strong>Sealing Entry Points:</strong> We will seal cracks, gaps, and openings to prevent cockroaches from entering your property.</li>
+                            <li><strong>Sanitation Recommendations:</strong> We will advise you on proper sanitation practices to eliminate cockroach attractants, such as food crumbs and moisture.</li>
+                            <li><strong>Monitoring:</strong> We offer monitoring services to detect any signs of cockroach activity and provide timely treatments as needed.</li>
+                            <li><strong>Preventive Measures:</strong> We will provide recommendations for preventive measures to reduce the risk of cockroach infestations, such as proper waste management and regular inspections.</li>
+                        </ul>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we understand the importance of a pest-free environment. That's why we use products and methods that are safe for use around occupants and the environment.</p>
+                        <p>Don't let cockroaches invade your home or business. Contact <span class="pestcocolour">PESTCO</span> today to schedule a cockroach pest control treatment and enjoy peace of mind.</p>
+                    </div>
+                </div>
+            </div>  
+            <div id="lizard-service-dec" class="container">
+                <div class="row">
+                    <div class="col">
+                        <p>Lizards are reptiles commonly found in homes and buildings. While they are generally harmless, their presence can be unsettling and lead to hygiene concerns.</p>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we specialize in providing effective lizard pest control treatments to eliminate infestations and ensure a comfortable environment. Our services are safe, efficient, and tailored to the specific needs of our clients.</p>
+                        <ul>
+                            <li><strong>Identification:</strong> Our trained technicians will identify the species of lizards present and assess the extent of the infestation.</li>
+                            <li><strong>Exclusion:</strong> We will seal entry points such as gaps in walls, windows, and doors to prevent lizards from entering your property.</li>
+                            <li><strong>Trapping:</strong> We may use traps or barriers to capture and remove lizards from your property.</li>
+                            <li><strong>Repellents:</strong> We will apply natural or chemical repellents to deter lizards from entering or staying on your property.</li>
+                            <li><strong>Environmental Modifications:</strong> We may recommend environmental modifications to make your property less attractive to lizards, such as reducing clutter and eliminating hiding spots.</li>
+                            <li><strong>Monitoring:</strong> We offer monitoring services to detect any signs of lizard activity and provide timely treatments as needed.</li>
+                            <li><strong>Preventive Measures:</strong> We will provide recommendations for preventive measures to reduce the risk of lizard infestations, such as proper waste management and regular inspections.</li>
+                        </ul>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we understand the importance of a pest-free environment. That's why we use products and methods that are safe for use around occupants and the environment.</p>
+                        <p>Don't let lizards disrupt your peace of mind. Contact <span class="pestcocolour">PESTCO</span> today to schedule a lizard pest control treatment and enjoy a comfortable environment.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="wasp-service-dec" class="container">
+                <div class="row">
+                    <div class="col">
+                        <p>Wasps are flying insects known for their aggressive behavior and painful stings. Wasp nests near homes or businesses can pose a threat to occupants and require professional treatment.</p>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we specialize in providing effective wasp pest control treatments to eliminate nests and ensure the safety of your property. Our services are safe, efficient, and tailored to the specific needs of our clients.</p>
+                        <ul>
+                            <li><strong>Identification:</strong> Our trained technicians will identify the species of wasps and locate their nests.</li>
+                            <li><strong>Nest Removal:</strong> We will safely remove wasp nests from your property, taking care to avoid disturbing the wasps.</li>
+                            <li><strong>Chemical Treatment:</strong> We will apply targeted chemical treatments to eliminate remaining wasps and prevent their return.</li>
+                            <li><strong>Exclusion:</strong> We will seal entry points such as gaps in walls and eaves to prevent wasps from reinfesting your property.</li>
+                            <li><strong>Monitoring:</strong> We offer monitoring services to detect any signs of wasp activity and provide timely treatments as needed.</li>
+                            <li><strong>Preventive Measures:</strong> We will provide recommendations for preventive measures to reduce the risk of wasp infestations, such as removing attractants and keeping outdoor areas clean.</li>
+                        </ul>
+                        <p>At <span class="pestcocolour">PESTCO</span>, we understand the importance of a safe environment. That's why we use products and methods that are safe for use around occupants and the environment.</p>
+                        <p>Don't let wasps pose a threat to your property. Contact <span class="pestcocolour">PESTCO</span> today to schedule a wasp pest control treatment and ensure the safety of your home or business.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+        <div hidden id="service-header" class="service-header">
+            <div id="general-service-hdr">General Pest Control Ensuring Uninterrupted Serenity</div>
+            <div id="spider-service-hdr">Precision Arachnid Control Solutions</div>
+            <div id="mosquito-service-hdr">Comprehensive Mosquito Management Services</div>
+            <div id="rodent-service-hdr">Effective Rodent Control Strategies</div>
+            <div id="ant-service-hdr">Strategic Ant Infestation Management</div>
+            <div id="borer-service-hdr">Specialized Wood Borer Control Services</div>
+            <div id="bedbug-service-hdr">Integrated Bedbug Elimination Solutions</div>
+            <div id="termite-service-hdr">Holistic Termite Management Approaches</div>
+            <div id="fly-service-hdr">Professional Fly Eradication Services</div>
+            <div id="cockroach-service-hdr">Advanced Cockroach Infestation Solutions</div>
+            <div id="lizard-service-hdr">Expert solutions for keeping your space lizard-free</div>
+            <div id="wasp-service-hdr">Effective measures to eliminate and prevent wasp infestations</div>
+        </div>
+
+        <!-- Testiminial Start --
+        <div hidden class="container-fluid testimonial py-5">
+            <div class="container py-5">
+                <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
+                    <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Testimonial</h5>
+                    <h1 class="display-5 w-50 mx-auto">What Clients Say About Our Services</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay=".5s">
+                    <div class="testimonial-item">
+                        <div class="testimonial-content rounded mb-4 p-4">
+                            <p class="fs-5 m-0">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam quis tempor.</p>
+                        </div>
+                        <div class="d-flex align-items-center  mb-4" style="padding: 0 0 0 25px;">
+                            <div class="position-relative">
+                                <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle py-2" alt="">
+                                <div class="position-absolute" style="top: 33px; left: -25px;">
+                                    <i class="fa fa-quote-left rounded-pill bg-primary text-dark p-3"></i>
+                                </div>
+                            </div>
+                            <div class="ms-3">
+                                <h4 class="mb-0">Client Name</h4>
+                                <p class="mb-1">Profession</p>
+                                <div class="d-flex">
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content rounded mb-4 p-4">
+                            <p class="fs-5 m-0">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam quis tempor.</p>
+                        </div>
+                        <div class="d-flex align-items-center  mb-4" style="padding: 0 0 0 25px;">
+                            <div class="position-relative">
+                                <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle py-2" alt="">
+                                <div class="position-absolute" style="top: 33px; left: -25px;">
+                                    <i class="fa fa-quote-left rounded-pill bg-primary text-dark p-3"></i>
+                                </div>
+                            </div>
+                            <div class="ms-3">
+                                <h4 class="mb-0">Client Name</h4>
+                                <p class="mb-1">Profession</p>
+                                <div class="d-flex">
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content rounded mb-4 p-4">
+                            <p class="fs-5 m-0">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam quis tempor.</p>
+                        </div>
+                        <div class="d-flex align-items-center  mb-4" style="padding: 0 0 0 25px;">
+                            <div class="position-relative">
+                                <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle py-2" alt="">
+                                <div class="position-absolute" style="top: 33px; left: -25px;">
+                                    <i class="fa fa-quote-left rounded-pill bg-primary text-dark p-3"></i>
+                                </div>
+                            </div>
+                            <div class="ms-3">
+                                <h4 class="mb-0">Client Name</h4>
+                                <p class="mb-1">Profession</p>
+                                <div class="d-flex">
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content rounded mb-4 p-4">
+                            <p class="fs-5 m-0">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam quis tempor.</p>
+                        </div>
+                        <div class="d-flex align-items-center  mb-4" style="padding: 0 0 0 25px;">
+                            <div class="position-relative">
+                                <img src="img/testimonial-4.jpg" class="img-fluid rounded-circle py-2" alt="">
+                                <div class="position-absolute" style="top: 33px; left: -25px;">
+                                    <i class="fa fa-quote-left rounded-pill bg-primary text-dark p-3"></i>
+                                </div>
+                            </div>
+                            <div class="ms-3">
+                                <h4 class="mb-0">Client Name</h4>
+                                <p class="mb-1">Profession</p>
+                                <div class="d-flex">
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                    <small class="fas fa-star text-primary me-1"></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testiminial End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn mt-0" data-wow-delay=".05s">
+            <div class="container py-5">
+                <div class="row g-4 footer-inner">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-white fw-bold mb-4">About PESTCO.</h4>
+                            <p> <span class="pestcocolour" >PESTCO</span> is a leading pest control service company dedicated to providing effective solutions for your pest management needs. Our commitment to quality and customer satisfaction sets us apart in the industry.</p>
+                            <p class="mb-0"><a class="text-primary" href="index.html">PESTCO</a> 2024 All Right Reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-white fw-bold mb-4">Usefull Link</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a class="btn btn-link ps-0" href="about.html"><i class="fa fa-check me-2"></i>About Us</a>
+                                <a class="btn btn-link ps-0" href="contact.html"><i class="fa fa-check me-2"></i>Contact Us</a>
+                                <a class="btn btn-link ps-0" href="service.html"><i class="fa fa-check me-2"></i>Our Services</a>
+                                <a hidden class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Terms & Condition</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-white fw-bold mb-4">Services Link</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a class="btn btn-link ps-0" href="service.html"><i class="fa fa-check me-2"></i>General Service</a>
+                                <a class="btn btn-link ps-0" href="service.html"><i class="fa fa-check me-2"></i>Mosquito Management</a>
+                                <a class="btn btn-link ps-0" href="service.html"><i class="fa fa-check me-2"></i>Rat & Mouse control</a>
+                                <a class="btn btn-link ps-0" href="service.html"><i class="fa fa-check me-2"></i>Spider Management</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-white fw-bold mb-4">Contact Us</h4>
+                            <a href="https://maps.app.goo.gl/PCBiFMCVydAWqL4d7" class="btn btn-link w-100 text-start ps-0 pb-3 border-bottom rounded-0"><i class="fa fa-map-marker-alt me-3"></i>56/120, Vytila, Ernakulam</a>
+                            <a href="tel:+91 9061513512, +91 7907422966" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-phone-alt me-3"></i>+91 9061513512, 7907422966</a>
+                            <a href="mailto:info@pestcoindia.com" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-envelope me-3"></i>info@pestccoindia.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                        <!-- For larger screens, use the logo -->
+                        <a href="index.html" class="navbar-brand d-none d-lg-block">
+                            <img src="img/Pestco logo1.png" alt="Your Company Logo" class="logo-img">
+                            <!-- Replace the <i> tag with an <img> tag for the .ico file -->
+                            <img src="img/beeInLogo.ico" alt="Your Icon" class="icon-img img-fluid">
+                        </a>
+                        <!-- For smaller screens, display text -->
+                        <a href="index.html" class="navbar-brand d-lg-none">
+                            <h1 class="mb-0 diplay-5">PESTCO<span class="text-white"></span><i hidden
+                                    class="fa fa-spider text-primary ms-2"></i></h1>
+                            <!--<span class="brandnameandtag">THE BEST PEST SOLUTION</span>-->
+                        </a>
+                        <!-- Rest of your Copyright bar -->
+                    </div>
+                    <div class="col-md-4 copyright-btn text-center text-md-start mb-3 mb-md-0 flex-shrink-0">
+                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div hidden class="col-md-4 my-auto text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

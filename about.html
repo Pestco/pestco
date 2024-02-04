@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>PESTCO - Pest Control</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+         <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+        <!-- Set the favicon -->
+        <link rel="icon" type="image/x-icon" href="img/beeInLogo.ico">
+
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar-top bg-primary">
+            <div class="container">
+                <div class="d-flex justify-content-between topbar py-2">
+                    <div class="d-flex align-items-center flex-shrink-0 topbar-info">
+                        <a href="https://maps.app.goo.gl/PCBiFMCVydAWqL4d7" class="me-4 text-secondary"><i class="fas fa-map-marker-alt me-2 text-dark"></i>53/1366D, S.A Road, Vytila, 682019 Ernakulam</a>
+                        <a href="tel:+919061513512" class="me-2 text-secondary"><i class="fas fa-phone-alt me-2 text-dark"></i>+91 9061513512,</a>
+                        <a href="tel:+917907422966" class="me-4 text-secondary"><!--i class="fas fa-phone-alt me-2 text-dark"></i-->+91 7907422966</a>
+                        <a href="mailto:info@pestcoindia.com" class="text-secondary"><i class="fas fa-envelope me-2 text-dark"></i>info@pestcoindia.com</a>
+                    </div>
+                    <div hidden class="text-end pe-4 me-4 border-end border-dark search-btn">
+                        <div class="search-form">
+                            <form method="post" action="index.html">
+                                <div class="form-group">
+                                    <div class="d-flex">
+                                        <input type="search" class="form-control border-0 rounded-pill" name="search-input" value="" placeholder="Search Here" required=""/>
+                                        <button type="submit" value="Search Now!" class="btn"><i class="fa fa-search text-dark"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center topbar-icon">
+                        <a href="#" class="me-4"><i class="fab fa-facebook-f text-dark"></i></a>
+                        <a href="#" class="me-4"><i class="fab fa-twitter text-dark"></i></a>
+                        <a href="#" class="me-4"><i class="fab fa-instagram text-dark"></i></a>
+                        <a href="#" class=""><i class="fab fa-linkedin-in text-dark"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-dark">
+            <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
+                    <!-- For larger screens, use the logo -->
+                    <a href="index.html" class="navbar-brand d-none d-lg-block">
+                        <img src="img/Pestco logo1.png" alt="Your Company Logo" class="logo-img">
+                        <!-- Replace the <i> tag with an <img> tag for the .ico file -->
+                        <img src="img/beeInLogo.ico" alt="Your Icon" class="icon-img img-fluid">
+                    </a>
+                    <!-- For smaller screens, display text -->
+                    <a href="index.html" class="navbar-brand d-lg-none">
+                        <h1 class="mb-0 diplay-5">PESTCO<span class="text-white"></span><i hidden class="fa fa-spider text-primary ms-2"></i></h1>
+                        <!--<span class="brandnameandtag">THE BEST PEST SOLUTION</span>-->
+                    </a>
+                    <!-- Rest of your navigation bar -->
+                    <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-dark"></span>
+                    </button>
+                    <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link">Services</a>
+                            <!--<a href="project.html" class="nav-item nav-link">Projects</a>-->
+                            <div hidden class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu m-0 bg-primary">
+                                    <a href="price.html" class="dropdown-item">Pricing Plan</a>
+                                    <a href="blog.html" class="dropdown-item">Blog Post</a>
+                                    <a href="team.html" class="dropdown-item">Team Members</a>
+                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                    <a href="404.html" class="dropdown-item active">404 Page</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        
+        <!-- Page Header Start -->
+        <div class="container-fluid page-header py-1">
+            <div class="container text-center py-5">
+                <h1 class="display-2 text-white mb-4 animated slideInDown">About</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center mb-0 animated slideInDown">
+                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                        <!--<li class="breadcrumb-item"><a href="#">Pages</a></li>-->
+                        <li class="breadcrumb-item text-white" aria-current="page">About</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+
+        <!-- About Start -->
+        <div class="container-fluid py-1">
+            <div class="container py-md-2 py-1">
+                <div class="row">
+                    <div class="wow fadeInUp" data-wow-delay=".3s">
+                        <div class="about-item overflow-hidden">
+                            <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary text-center">About <span class="pestcocolour">Us</span></h5>
+                            <h1 class="display-5 mb-2 text-center" style="text-align: justify;">For Reliable Pest Management.</h1>
+                            <p class="fs-5" style="text-align: justify;">
+                                <!-- Main Content -->
+                                <div class="container py-1">
+                              
+                                  <div class="row py-2">
+                                    <div class="col-md-12">
+                                      <div class="col-md-12 d-flex align-items-center">
+                                        <div class="flex-grow-1"> <!-- Adjust the width of the column as needed -->
+                                          <p class="g-4 d-block d-lg-none">Established in 2015, <span class="pestcocolour">PESTCO</span> has been serving the residents and businesses of Kerala with excellence in pest control solutions for over 9 years. With a passion for protecting homes, workplaces, and the environment, we have earned a reputation for reliability, professionalism, and effectiveness.</p>
+                                          <p class="g-4 d-none d-lg-block">In the enchanted realm of pest control, where troubles crawl and flutter, <span class="pestcocolour">PESTCO</span> stands as the formidable sorcerer of solutions. Established in 2015, our journey spans over nine years in Kerala's embrace, with a passion for protecting homes, workplaces, and the environment. With a lineage steeped in ancient wisdom and modern expertise, our licensed enchanters wield their skills to unravel the most perplexing pest enigmas. Our reputation for reliability, professionalism, and effectiveness echoes through the years, a testament to our dedication. As we continue to serve with excellence, let our commitment be a beacon of hope in the ongoing battle against pests, safeguarding, protecting, and renewing for generations to come.</p>
+                                        </div>
+                                        <div class="flex-grow-0 p-3 div-img-abt"> <!-- Align image to the right -->
+                                          <img src="img/about-img1.jpg" alt="PESTCO Logo" class="p-0 custom-border h-100 img_aboutbee d-md-block d-none img-fluid g-4">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              
+                                  <div class="row py-1">
+                                    <div class="col-md-4">
+                                      <h3>What We Do</h3>
+                                      <p>At <span class="pestcocolour">PESTCO</span>, we specialize in providing comprehensive pest control services tailored to meet the unique needs of our clients. From residential properties to commercial establishments, we offer solutions for a wide range of pests, including rodents, insects, termites, and more. Our expert team employs advanced techniques and eco-friendly practices to ensure the safety and well-being of our customers while effectively eliminating pests.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                      <h3>Why Choose Us</h3>
+                                      <ul>
+                                        <li><strong>Experience:</strong> With nearly a decade of experience in the industry, we have the knowledge and expertise to tackle any pest challenge.</li>
+                                        <li><strong>Professionalism:</strong> Our team of licensed technicians is committed to delivering high-quality service with integrity and professionalism.</li>
+                                        <li><strong>Customized Solutions:</strong> We understand that every pest problem is unique, which is why we tailor our solutions to address specific needs and concerns.</li>
+                                        <li><strong>Safety First:</strong> The health and safety of our customers, their families, and the environment are our top priorities. We use safe and environmentally friendly pesticides and follow strict safety protocols in every job we undertake.</li>
+                                        <li><strong>Customer Satisfaction:</strong> At <span class="pestcocolour">PESTCO</span>, customer satisfaction is paramount. We strive to exceed our customers' expectations by delivering prompt, reliable, and effective pest control solutions.</li>
+                                      </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                      <h3>How We Work</h3>
+                                      <ul>
+                                        <li><strong>Assessment:</strong> We begin by conducting a thorough inspection of your property to identify the type and extent of the pest infestation.</li>
+                                        <li><strong>Treatment:</strong> Based on our assessment, we develop a customized treatment plan using the most appropriate methods and products to eliminate the pests.</li>
+                                        <li><strong>Prevention:</strong> In addition to eradicating existing pests, we implement preventive measures to minimize the risk of future infestations, such as sealing entry points and providing ongoing maintenance services.</li>
+                                        <li><strong>Education:</strong> We believe in empowering our customers with knowledge about pest control and prevention. Our technicians are happy to offer tips and advice on how to keep pests at bay between service visits.</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                              
+                                  <div class="row py-1">
+                                    <div class="col-md-12 text-center">
+                                      <h2>Contact Us</h2>
+                                      <p>Ready to say goodbye to pests for good? Contact <span class="pestcocolour">PESTCO</span> today to schedule a consultation and take the first step towards a pest-free environment. We look forward to serving you!</p>
+                                      <a href="contact.html" class="btn btn-primary border-0 rounded-pill px-4 py-3">Contact Us</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            <div hidden class="row">
+                                <div class="col-3">
+                                    <div class="text-center">
+                                        <div class="p-4 bg-dark rounded d-flex" style="align-items: center; justify-content: center;">
+                                            <i class="fas fa-hotel fa-4x text-primary"></i>
+                                        </div>
+                                        <div class="my-2">
+                                            <h5>Hotel</h5>
+                                            <h5>Solutions</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="text-center">
+                                        <div class="p-4 bg-dark rounded d-flex" style="align-items: center; justify-content: center;">
+                                            <i class="fas fa-school fa-4x text-primary"></i>
+                                        </div>
+                                        <div class="my-2">
+                                            <h5>Institutional</h5>
+                                            <h5>Care</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="text-center">
+                                        <div class="p-4 bg-dark rounded d-flex" style="align-items: center; justify-content: center;">
+                                            <i class="fas fa-warehouse fa-4x text-primary"></i>
+                                        </div>
+                                        <div class="my-2">
+                                            <h5>Warehouse</h5>
+                                            <h5>Integrity</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="text-center">
+                                        <div class="p-4 bg-dark rounded d-flex" style="align-items: center; justify-content: center;">
+                                            <i class="fa fa-hospital fa-4x text-primary"></i>
+                                        </div>
+                                        <div class="my-2">
+                                            <h5>Hospital</h5>
+                                            <h5>Environments</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--a href="service.html" class="btn btn-primary border-0 rounded-pill px-4 py-3 mt-5">Find Services</a-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Call To Action Start -->
+        <div class="container-fluid py-1 call-to-action wow fadeInUp" data-wow-delay=".3s" style="margin: 6rem 0;">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <img src="img/action.jpg" class="img-fluid w-100 rounded-circle p-5" alt="">
+                    </div>
+                    <div class="col-lg-6 my-auto">
+                        <div class="text-start mt-4">
+                            <h1 class="pb-4 text-white">"Let whispers of pest-free havens reach you. Subscribe to our tales."</h1>
+                        </div>
+                        <form method="post" action="index.html">
+                            <div class="form-group">
+                                <div class="d-flex call-btn">
+                                    <input type="search" class="form-control py-3 px-4 w-100 border-0 rounded-0 rounded-end rounded-pill" name="search-input" value="" placeholder="Enter Your Email Address" required="Please enter a valid email"/>
+                                    <button type="email" value="Search Now!" class="btn btn-primary border-0 rounded-pill rounded rounded-start px-5">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>  
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!-- Call To Action End -->
+
+
+        <!-- Team Start --
+        <div hidden class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
+                    <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Our Team</h5>
+                    <h1 class="display-5 w-50 mx-auto">Our Team Members</h1>
+                </div>
+                <div class="row g-5">
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="rounded team-item">
+                            <img src="img/team-1..jpg" class="img-fluid w-100 rounded-top border border-bottom-0" alt="">
+                            <div class="team-content bg-primary text-dark text-center py-3">
+                                <span class="fs-4 fw-bold">Full Name</span>
+                                <p class="text-muted mb-0">Designation</p>
+                            </div>
+                            <div class="team-icon d-flex flex-column ">
+                                <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-primary border-0"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="rounded team-item">
+                            <img src="img/team-2.jpg" class="img-fluid w-100 rounded-top border border-bottom-0" alt="">
+                            <div class="team-content bg-primary text-dark text-center py-3">
+                                <span class="fs-4 fw-bold">Full Name</span>
+                                <p class="text-muted mb-0">Designation</p>
+                            </div>
+                            <div class="team-icon d-flex flex-column ">
+                                <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-primary border-0"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".7s">
+                        <div class="rounded team-item">
+                            <img src="img/team-3.jpg" class="img-fluid w-100 rounded-top border border-bottom-0" alt="">
+                            <div class="team-content bg-primary text-dark text-center py-3">
+                                <span class="fs-4 fw-bold">Full Name</span>
+                                <p class="text-muted mb-0">Designation</p>
+                            </div>
+                            <div class="team-icon d-flex flex-column ">
+                                <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-primary border-0"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".9s">
+                        <div class="rounded team-item">
+                            <img src="img/team-4.jpg" class="img-fluid w-100 rounded-top border border-bottom-0" alt="">
+                            <div class="team-content bg-primary text-dark text-center py-3">
+                                <span class="fs-4 fw-bold">Full Name</span>
+                                <p class="text-muted mb-0">Designation</p>
+                            </div>
+                            <div class="team-icon d-flex flex-column ">
+                                <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-primary border-0 mb-2"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-primary border-0"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+                 <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn mt-0" data-wow-delay=".05s">
+            <div class="container py-5">
+                <div class="row g-4 footer-inner">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-white fw-bold mb-4">About PESTCO.</h4>
+                            <p> <span class="pestcocolour" >PESTCO</span> is a leading pest control service company dedicated to providing effective solutions for your pest management needs. Our commitment to quality and customer satisfaction sets us apart in the industry.</p>
+                            <p class="mb-0"><a class="text-primary" href="index.html">PESTCO</a> 2024 All Right Reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-white fw-bold mb-4">Usefull Link</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a class="btn btn-link ps-0" href="about.html"><i class="fa fa-check me-2"></i>About Us</a>
+                                <a class="btn btn-link ps-0" href="contact.html"><i class="fa fa-check me-2"></i>Contact Us</a>
+                                <a class="btn btn-link ps-0" href="service.html"><i class="fa fa-check me-2"></i>Our Services</a>
+                                <a hidden class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Terms & Condition</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-white fw-bold mb-4">Services Link</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a class="btn btn-link ps-0" href="service.html"><i class="fa fa-check me-2"></i>General Service</a>
+                                <a class="btn btn-link ps-0" href="service.html"><i class="fa fa-check me-2"></i>Mosquito Management</a>
+                                <a class="btn btn-link ps-0" href="service.html"><i class="fa fa-check me-2"></i>Rat & Mouse control</a>
+                                <a class="btn btn-link ps-0" href="service.html"><i class="fa fa-check me-2"></i>Spider Management</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-white fw-bold mb-4">Contact Us</h4>
+                            <a href="https://maps.app.goo.gl/PCBiFMCVydAWqL4d7" class="btn btn-link w-100 text-start ps-0 pb-3 border-bottom rounded-0"><i class="fa fa-map-marker-alt me-3"></i>56/120, Vytila, Ernakulam</a>
+                            <a href="tel:+91 9061513512, +91 7907422966" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-phone-alt me-3"></i>+91 9061513512, 7907422966</a>
+                            <a href="mailto:info@pestcoindia.com" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-envelope me-3"></i>info@pestccoindia.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                        <!-- For larger screens, use the logo -->
+                        <a href="index.html" class="navbar-brand d-none d-lg-block">
+                            <img src="img/Pestco logo1.png" alt="Your Company Logo" class="logo-img">
+                            <!-- Replace the <i> tag with an <img> tag for the .ico file -->
+                            <img src="img/beeInLogo.ico" alt="Your Icon" class="icon-img img-fluid">
+                        </a>
+                        <!-- For smaller screens, display text -->
+                        <a href="index.html" class="navbar-brand d-lg-none">
+                            <h1 class="mb-0 diplay-5">PESTCO<span class="text-white"></span><i hidden
+                                    class="fa fa-spider text-primary ms-2"></i></h1>
+                            <!--<span class="brandnameandtag">THE BEST PEST SOLUTION</span>-->
+                        </a>
+                        <!-- Rest of your Copyright bar -->
+                    </div>
+                    <div class="col-md-4 copyright-btn text-center text-md-start mb-3 mb-md-0 flex-shrink-0">
+                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div hidden class="col-md-4 my-auto text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+        
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
