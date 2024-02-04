@@ -727,7 +727,6 @@ body {
 .call-to-action {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
-    margin-top: 0;
 }
 
 /*** Call To Action End ***/
