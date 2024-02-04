@@ -160,31 +160,8 @@
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                         <div class="rounded contact-form">
-                            <!--form id="myForm" action="https://formspree.io/f/xyyrezwz" method="POST">
-                                <div class="mb-4">
-                                    <input name="name" id="name" type="text" class="form-control p-3 contact-placeholder" placeholder="Your Name" required>
-                                    <span id="nameError" style="color: red;"></span>
-                                </div>
-                                <div class="mb-4">
-                                    <input name="email" id="email" type="email" class="form-control p-3 contact-placeholder" placeholder="Your Email" required>
-                                    <span id="emailError" style="color: red;"></span>
-                                </div>
-                                <div class="mb-4">
-                                    <input name="Phone" id="phone" type="tel" class="form-control p-3 contact-placeholder" placeholder="Your Phone number" required>
-                                    <span id="phoneError" style="color: red;"></span>
-                                </div>
-                                <div class="mb-4">
-                                    <input name="Services" type="text" class="form-control p-3 contact-placeholder" placeholder="Service" required>
-                                </div>
-                                <div class="mb-4">
-                                    <textarea name="Messages" class="w-100 form-control p-3 contact-placeholder" rows="6" cols="10" placeholder="Message"></textarea>
-                                </div>
-                                <div id="result"></div>
-                                <span id="usernameError" style="color: red;"></span>
-                                <button class="btn btn-primary border-0 py-3 px-4 rounded-pill contact-placeholder" name="submit" type="submit">Send Message</button>
-                                <input type="hidden" name="_template" value="table">
-                            </form-->
-                            <form onsubmit="ValidateForm()" id="myForm" name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyyrezwz" method="post">
+                            <form onsubmit="ValidateForm()" id="my-form" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/mqkrpban" method="post">
+                            <!--form id="myForm" name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyyrezwz" method="post"-->
                                 <div class="mb-4">
                                     <input name="name" id="name" type="text" class="form-control p-3 contact-placeholder" placeholder="Your Name"
                                         required>
@@ -206,7 +183,7 @@
                                 </div>
                                 <div id="result"></div>
                                 <span id="usernameError" style="color: red;"></span>
-                                <button class="btn btn-primary border-0 py-3 px-4 rounded-pill contact-placeholder" name="submit" type="submit">Send Message</button>
+                                <button id="my-form-button" class="btn btn-primary border-0 py-3 px-4 rounded-pill contact-placeholder" name="submit" type="submit">Send Message</button>
                             </form>
                         </div>
                     </div>
@@ -261,7 +238,7 @@
                             </div>
                             <div class="m-3 contact-link">
                                 <h4 class="text-dark">Email Us</h4>
-                                <a class="h5 text-dark fs-6 d-inline" href="mailto:info@pestcoindia.com?subject=Your%20Subject&body=">info@pestcoindia.com</a>
+                                <a class="h5 text-dark fs-6 d-inline    " href="mailto:info@pestcoindia.com?subject=Your%20Subject&body=">info@pestcoindia.com</a>
                             </div>
                         </div>
                     </div>
@@ -371,8 +348,9 @@
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-        <!-- Template Javascript -->
+        <!-- Javascript -->
         <script src="js/main.js"></script>
+        <script src="js/form.js"></script>
     </body>
 
 </html>
